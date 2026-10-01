@@ -4,6 +4,7 @@ rem resource), then the installer. Keep this file ASCII-only (codepage).
 cd /d "%~dp0"
 
 echo [0/3] refresh payload from build output ...
+if not exist payload mkdir payload
 copy /y ..\build\imagematrix.exe payload\ >nul
 copy /y ..\build\imagematrix-cli.exe payload\ >nul
 copy /y ..\README.md payload\ >nul
