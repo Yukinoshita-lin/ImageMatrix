@@ -1,0 +1,25 @@
+# ---- 构建产物 ----
+build/*.o
+build/*.exe
+build/gui_out/
+build/verify_out/
+build/selftest_out/
+
+# ---- 安装器（setup.exe 通过 GitHub Releases 分发，不入库） ----
+setup/ImageMatrix_Setup.exe
+setup/installer.res.o
+setup/payload/imagematrix.exe
+setup/payload/imagematrix-cli.exe
+setup/payload/README.md
+setup/payload/uninstall.exe
+
+# ---- 宣传视频（成片通过 GitHub Releases 分发；脚本能重新生成） ----
+promo/*.mp4
+promo/bgm.wav
+promo/ffmpeg.log
+promo/preview/
+promo/__pycache__/
+
+# ---- 其他 ----
+__pycache__/
+*.log

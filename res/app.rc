@@ -1,0 +1,27 @@
+/* app.rc -- 资源脚本：应用程序清单（启用 Common Controls v6 视觉样式） + 版本信息 */
+1 24 "app.manifest"
+
+1 VERSIONINFO
+FILEVERSION    1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEOS         0x40004L
+FILETYPE       0x1L
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "080404b0"
+    BEGIN
+      VALUE "CompanyName",      "ImageMatrix"
+      VALUE "FileDescription",  "ImageMatrix - image to numeric matrix (R/G/B/gray) converter"
+      VALUE "FileVersion",      "1.0.0.0"
+      VALUE "InternalName",     "ImageMatrix"
+      VALUE "OriginalFilename", "imagematrix.exe"
+      VALUE "ProductName",      "ImageMatrix"
+      VALUE "ProductVersion",   "1.0.0.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x804, 1200
+  END
+END

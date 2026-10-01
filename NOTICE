@@ -1,0 +1,28 @@
+ImageMatrix
+Copyright 2026 Yukinoshita-lin
+
+This product includes software developed by Yukinoshita-lin
+(https://github.com/Yukinoshita-lin).
+
+ImageMatrix is a Windows tool that converts images into numeric matrices
+(R / G / B / grayscale) and restores images from those matrices, written
+in pure C/C++ with a hand-written BMP codec and a Win32 API GUI.
+
+This product is distributed with no third-party libraries. It depends only
+on components shipped with the Microsoft Windows operating system:
+Win32 API, GDI+ (system component), UCRT, and Common Controls v6.
+
+本产品为原创软件，未捆绑任何第三方库，仅依赖 Windows 操作系统自带组件
+（Win32 API、GDI+、UCRT、Common Controls v6）。
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

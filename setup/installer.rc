@@ -1,0 +1,5 @@
+/* ImageMatrix 安装器资源：应用文件全部嵌入 setup.exe */
+101 RCDATA "payload/imagematrix.exe"
+102 RCDATA "payload/imagematrix-cli.exe"
+103 RCDATA "payload/README.md"
+104 RCDATA "payload/uninstall.exe"
