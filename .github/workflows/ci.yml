@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build & selftest (Windows x64)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build GUI + CLI
+        shell: cmd
+        run: build.bat
+
+      - name: Selftest (20 checks)
+        shell: cmd
+        run: build\imagematrix-cli.exe selftest -d build\selftest_out
+
+      - name: Independent numeric verification
+        shell: cmd
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File test\verify.ps1
+
+      - name: Build installer
+        shell: cmd
+        run: cd setup && build.cmd
+
+      - name: Upload installer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ImageMatrix_Setup
+          path: setup/ImageMatrix_Setup.exe
+          if-no-files-found: error

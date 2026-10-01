@@ -1,5 +1,12 @@
 # ImageMatrix —— 图片 ↔ 数值矩阵（R/G/B/灰度）转换程序
 
+![CI](https://github.com/Yukinoshita-lin/ImageMatrix/actions/workflows/ci.yml/badge.svg)
+![License](https://img.shields.io/github/license/Yukinoshita-lin/ImageMatrix)
+![Release](https://img.shields.io/github/v/release/Yukinoshita-lin/ImageMatrix)
+![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078D4?logo=windows95&logoColor=white)
+![Language](https://img.shields.io/badge/C%2FC%2B%2B-17-00599C?logo=cplusplus&logoColor=white)
+![Stars](https://img.shields.io/github/stars/Yukinoshita-lin/ImageMatrix?style=social)
+
 一个完全用 **C/C++** 编写的 Windows 小程序：
 
 * 把图片“识别”成由 **R、G、B、灰度值** 等向量组成的矩阵，导出成 **TXT** 文本；
